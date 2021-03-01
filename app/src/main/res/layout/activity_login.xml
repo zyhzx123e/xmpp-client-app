@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="Log In"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/login_editText_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_login_edittext"
+        android:drawableLeft="@mipmap/denglu_tb1"
+        android:hint="username(phone or id)"
+        android:maxLength="11"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/login_editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_login_edittext"
+        android:drawableLeft="@mipmap/denglu_tb2"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/login_textview_enter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@drawable/shape_login_textview_focused"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Log in"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/login_textview_phone_regster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@+id/login_textview_enter"
+            android:layout_marginTop="5dp"
+            android:text="Register from phone" />
+
+        <TextView
+            android:id="@+id/login_textview_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignTop="@+id/login_textview_phone_regster"
+            android:text="Forgot password？" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#757e75" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="Login via QQ or WeiBo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#757e75" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/login_imageView_qqlogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/login_qq_icon_normal"
+                android:gravity="center"
+                android:text="Tencent QQ" />
+
+            <RadioButton
+                android:id="@+id/login_imageView_weibologin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/login_sina_icon_normal"
+                android:gravity="center"
+                android:text="Sina WeiBo" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
